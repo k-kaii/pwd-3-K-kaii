@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Mahasiswa</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      margin: 40px;
+    }
+    h2 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    fieldset {
+      border: 1px solid black;
+      margin-bottom: 15px;
+      padding: 10px 25px 15px 25px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    .row {
+      margin-bottom: 8px;
+    }
+    .label {
+      display: inline-block;
+      width: 180px; /* lebar untuk sejajarkan titik dua */
+    }
+    .colon {
+      display: inline-block;
+      width: 15px;
+      text-align: center;
+    }
+    input[type="text"], select, textarea {
+      width: 240px;
+      font-family: "Times New Roman", Times, serif;
+      padding: 3px;
+    }
+    textarea {
+      height: 60px;
+      vertical-align: top;
+    }
+    .checkbox-inline {
+      display: inline-block;
+      margin-right: 12px;
+    }
+    .btn {
+      margin-top: 10px;
+      font-family: "Times New Roman", Times, serif;
+      padding: 3px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Form Mahasiswa</h2>
+
+  <form>
+    <fieldset>
+      <legend>Data Mahasiswa</legend>
+
+      <div class="row">
+        <span class="label">Nama</span>
+        <span class="colon">:</span>
+        <input type="text" name="nama">
+      </div>
+
+      <div class="row">
+        <span class="label">NPM</span>
+        <span class="colon">:</span>
+        <input type="text" name="npm">
+      </div>
+
+      <div class="row">
+        <span class="label">Kelas</span>
+        <span class="colon">:</span>
+        <select name="kelas">
+          <option value="">-</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <span class="label">Jenis Kelamin</span>
+        <span class="colon">:</span>
+        <input type="radio" name="jk" value="Pria"> Pria
+        <input type="radio" name="jk" value="Wanita"> Wanita
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tempat Tinggal Mahasiswa</legend>
+
+      <div class="row">
+        <span class="label">Alamat</span>
+        <span class="colon">:</span>
+        <textarea name="alamat"></textarea>
+      </div>
+
+      <div class="row">
+        <span class="label">Kecamatan</span>
+        <span class="colon">:</span>
+        <input type="text" name="kecamatan">
+      </div>
+
+      <div class="row">
+        <span class="label">Kabupaten/Kotamadya</span>
+        <span class="colon">:</span>
+        <input type="text" name="kota">
+      </div>
+
+      <div class="row">
+        <span class="label">Provinsi</span>
+        <span class="colon">:</span>
+        <input type="text" name="provinsi">
+      </div>
+
+      <div class="row">
+        <span class="label">Kode Pos</span>
+        <span class="colon">:</span>
+        <input type="text" name="kodepos">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Lain-lainnya</legend>
+
+      <div class="row">
+        <span class="label">Bahasa Pemrograman</span>
+        <span class="colon">:</span>
+        <span>
+          <label class="checkbox-inline"><input type="checkbox"> C / C++</label>
+          <label class="checkbox-inline"><input type="checkbox"> Go Lang</label>
+          <label class="checkbox-inline"><input type="checkbox"> Python</label>
+          <label class="checkbox-inline"><input type="checkbox"> Lainnya</label>
+          <label class="checkbox-inline"><input type="checkbox"> PHP</label>
+          <label class="checkbox-inline"><input type="checkbox"> Javascript</label>
+          <label class="checkbox-inline"><input type="checkbox"> Ruby</label>
+        </span>
+      </div>
+
+      <div class="row">
+        <span class="label">Kegiatan</span>
+        <span class="colon">:</span>
+        <span>
+          <label class="checkbox-inline"><input type="checkbox"> Organisasi Kemahasiswaan</label>
+          <label class="checkbox-inline"><input type="checkbox"> Bidang Olahraga</label>
+          <label class="checkbox-inline"><input type="checkbox"> Lainnya</label> <br>
+          <span style="margin-left:195px;">
+            <label class="checkbox-inline"><input type="checkbox"> Organisasi di Luar Kampus</label>
+            <label class="checkbox-inline"><input type="checkbox"> Bidang Seni</label>
+          </span>
+        </span>
+      </div>
+    </fieldset>
+
+    <input type="reset" value="Reset" class="btn">
+    <input type="submit" value="Submit" class="btn">
+  </form>
+
+</body>
+</html>
